@@ -16,50 +16,50 @@
             </div>
 
             <div class="row">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button style="background-color: rgb(255, 216, 0); color: #000;">+</button>
+                <button onclick="WriteToEntry('1')">1</button>
+                <button onclick="WriteToEntry('2')">2</button>
+                <button onclick="WriteToEntry('3')">3</button>
+                <button style="background-color: rgb(255, 216, 0); color: #000;" onclick="WriteToEntry('+')">+</button>
             </div>
 
             <div class="row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button style="background-color: rgb(255, 216, 0); color: #000;">-</button>
+                <button onclick="WriteToEntry(4)">4</button>
+                <button onclick="WriteToEntry(5)">5</button>
+                <button onclick="WriteToEntry(6)">6</button>
+                <button style="background-color: rgb(255, 216, 0); color: #000;" onclick="WriteToEntry()">-</button>
             </div>
 
             <div class="row">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button style="background-color: rgb(255, 216, 0); color: #000;">*</button>
+                <button onclick="WriteToEntry('7')">7</button>
+                <button onclick="WriteToEntry('8')">8</button>
+                <button onclick="WriteToEntry('9')">9</button>
+                <button style="background-color: rgb(255, 216, 0); color: #000;" onclick="WriteToEntry('*')">*</button>
             </div>
 
             <div class="row">
-                <button>.</button>
-                <button>0</button>
-                <button>^</button>
-                <button style="background-color: rgb(255, 216, 0); color: #000;">/</button>
+                <button onclick="WriteToEntry('.')">.</button>
+                <button onclick="WriteToEntry('0')">0</button>
+                <button onclick="WriteToEntry('^')">^</button>
+                <button style="background-color: rgb(255, 216, 0); color: #000;" onclick="WriteToEntry('/')">/</button>
             </div>
 
             <div class="row">
-                <button>x²</button>
-                <button><i class="fa-solid fa-square-root-variable"></i></button>
-                <button><i class="fa-solid fa-copy"></i></button>
-                <button style="background-color: rgb(255, 216, 0); color: #000;">=</button>
+                <button onclick="Square()">x²</button>
+                <button onclick="SquareRoot()"><i class="fa-solid fa-square-root-variable"></i></button>
+                <button onclick="Copy()"><i class="fa-solid fa-copy"></i></button>
+                <button style="background-color: rgb(255, 216, 0); color: #000;" onclick="CalculateExpression()">=</button>
             </div>
 
             <div class="row">
-                <button>(</button>
-                <button>)</button>
-                <button>AC</button>
-                <button style="background-color: rgb(255, 216, 0); color: #000;"><i class="fa-solid fa-delete-left"></i></button>
+                <button onclick="WriteToEntry('(')">(</button>
+                <button onclick="WriteToEntry(')')">)</button>
+                <button onclick="ClearEntry()">AC</button>
+                <button style="background-color: rgb(255, 216, 0); color: #000;" onclick="Backspace()"><i class="fa-solid fa-delete-left"></i></button>
             </div>
 
-            <div class="exit">
+            <!-- <div class="exit">
                 <button>Exit</button>
-            </div>
+            </div> -->
         </div>
         
         <!-- js -->

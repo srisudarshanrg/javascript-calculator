@@ -27,6 +27,7 @@ input {
     border: 2px solid rgb(255, 216, 0);
     font-family: "Work Sans", sans-serif;
     font-size: 1.5rem;
+    color: #fff;
 }
 
 .calculator .row {
